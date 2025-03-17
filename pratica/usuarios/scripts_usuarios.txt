@@ -1,0 +1,24 @@
+INSERT INTO usuarios (nome, sobrenome, email)
+	VALUES ("Joao", "das Couves", "jc@email.com"), ("Ligia", "Fonteles", "fonteles@gemail.com"), ("Miranda", "Pinto", "mimi@gmail.com");
+    
+SELECT *
+	FROM usuarios;
+    
+SELECT *
+	FROM usuarios
+    WHERE email = "jc@email.com";
+    
+SELECT *
+	FROM usuarios
+    WHERE id = 3;
+    
+UPDATE usuarios
+	SET nome = "Miu"
+    WHERE id = 2;
+    
+DELETE FROM usuarios
+	WHERE id = 3;
+    
+SELECT *
+	FROM usuarios
+    ORDER BY nome DESC;
